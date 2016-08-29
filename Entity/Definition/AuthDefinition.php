@@ -10,4 +10,68 @@ namespace MailChimpBundle\Entity\Definition;
  *
  */
 trait AuthDefinition
-{}
+{    
+
+
+	private $anyString;    
+
+
+	private $endPoint;    
+
+
+	private $subDomain;    
+
+
+	private $version;    
+
+	public function setAnyString($anyString)
+	{
+		$this->anyString = $anyString;
+		
+		return $this;
+	}
+	
+	public function getAnyString()
+	{
+		return $this->anyString;
+	}
+    
+
+	public function setEndPoint($endPoint)
+	{
+		$this->endPoint = $endPoint;
+		
+		return $this;
+	}
+	
+	public function getEndPoint()
+	{
+		return $this->endPoint;
+	}
+    
+
+	public function setSubDomain($subDomain)
+	{
+		$this->subDomain = $subDomain;
+		
+		return $this;
+	}
+	
+	public function getSubDomain()
+	{
+		return $this->subDomain;
+	}
+    
+
+	public function setVersion($version)
+	{
+		$this->version = $version;
+		
+		return $this;
+	}
+	
+	public function getVersion()
+	{
+		return $this->version;
+	}
+}
