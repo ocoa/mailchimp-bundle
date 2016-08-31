@@ -12,242 +12,317 @@ namespace MailChimpBundle\Entity\Definition;
 trait ListDefinition
 {    
 
-
-	private $id;    
-
-
-	private $name;    
-
-
-	private $contact;    
-
-
-	private $permissionReminder;    
-
-
-	private $useArchiveBar;    
-
-
-	private $campaignDefaults;    
-
-
-	private $notifyOnSubscribe;    
-
-
-	private $notifyOnUnsubscribe;    
-
-
-	private $dateCreated;    
-
-
-	private $listRating;    
-
-
-	private $emailTypeOption;    
-
-
-	private $subscribeUrlShort;    
-
-
-	private $subscribeUrlLong;    
-
-
-	private $beamerAddress;    
-
-
-	private $visibility;    
-
-	public function setId($id)
-	{
-		$this->id = $id;
-		
-		return $this;
-	}
+	 /**
+	 * @var string
+	 *
+	 
+	 */
 	
-	public function getId()
-	{
-		return $this->id;
-	}
+	private $name;
+	
     
 
+	 /**
+	 * @var Object
+	 *
+	 
+	 */
+	
+	private $contact;
+	
+    
+
+	 /**
+	 * @var string
+	 *
+	 
+	 */
+	
+	private $permissionReminder;
+	
+    
+
+	 /**
+	 * @var blob
+	 *
+	 
+	 */
+	
+	private $useArchiveBar;
+	
+    
+
+	 /**
+	 * @var Object
+	 *
+	 
+	 */
+	
+	private $campaignDefaults;
+	
+    
+
+	 /**
+	 * @var string
+	 *
+	 
+	 */
+	
+	private $notifyOnSubscribe;
+	
+    
+
+	 /**
+	 * @var string
+	 *
+	 
+	 */
+	
+	private $notifyOnUnsubscribe;
+	
+    
+
+	 /**
+	 * @var blob
+	 *
+	 
+	 */
+	
+	private $emailTypeOption;
+	
+    
+
+	 /**
+	 * @var string
+	 *
+	 
+	 */
+	
+	private $visibility;
+	
+    
+
+	
+	/**
+	 * Get name
+	 *
+	 * @return string
+	 */
+	public function getName()
+	{
+		return $this->name;
+	}
+
+	/**
+	 * Set name
+	 *
+	 * @param  string $name
+	 * @return List
+	 */
 	public function setName($name)
 	{
 		$this->name = $name;
 		
 		return $this;
-	}
-	
-	public function getName()
-	{
-		return $this->name;
-	}
+	}	
     
 
+	
+	/**
+	 * Get contact
+	 *
+	 * @return Object
+	 */
+	public function getContact()
+	{
+		return $this->contact;
+	}
+
+	/**
+	 * Set contact
+	 *
+	 * @param  Object $contact
+	 * @return List
+	 */
 	public function setContact($contact)
 	{
 		$this->contact = $contact;
 		
 		return $this;
-	}
-	
-	public function getContact()
-	{
-		return $this->contact;
-	}
+	}	
     
 
+	
+	/**
+	 * Get permissionReminder
+	 *
+	 * @return string
+	 */
+	public function getPermissionReminder()
+	{
+		return $this->permissionReminder;
+	}
+
+	/**
+	 * Set permissionReminder
+	 *
+	 * @param  string $permissionReminder
+	 * @return List
+	 */
 	public function setPermissionReminder($permissionReminder)
 	{
 		$this->permissionReminder = $permissionReminder;
 		
 		return $this;
-	}
-	
-	public function getPermissionReminder()
-	{
-		return $this->permissionReminder;
-	}
+	}	
     
 
+	
+	/**
+	 * Get useArchiveBar
+	 *
+	 * @return blob
+	 */
+	public function getUseArchiveBar()
+	{
+		return $this->useArchiveBar;
+	}
+
+	/**
+	 * Set useArchiveBar
+	 *
+	 * @param  blob $useArchiveBar
+	 * @return List
+	 */
 	public function setUseArchiveBar($useArchiveBar)
 	{
 		$this->useArchiveBar = $useArchiveBar;
 		
 		return $this;
-	}
-	
-	public function getUseArchiveBar()
-	{
-		return $this->useArchiveBar;
-	}
+	}	
     
 
+	
+	/**
+	 * Get campaignDefaults
+	 *
+	 * @return Object
+	 */
+	public function getCampaignDefaults()
+	{
+		return $this->campaignDefaults;
+	}
+
+	/**
+	 * Set campaignDefaults
+	 *
+	 * @param  Object $campaignDefaults
+	 * @return List
+	 */
 	public function setCampaignDefaults($campaignDefaults)
 	{
 		$this->campaignDefaults = $campaignDefaults;
 		
 		return $this;
-	}
-	
-	public function getCampaignDefaults()
-	{
-		return $this->campaignDefaults;
-	}
+	}	
     
 
+	
+	/**
+	 * Get notifyOnSubscribe
+	 *
+	 * @return string
+	 */
+	public function getNotifyOnSubscribe()
+	{
+		return $this->notifyOnSubscribe;
+	}
+
+	/**
+	 * Set notifyOnSubscribe
+	 *
+	 * @param  string $notifyOnSubscribe
+	 * @return List
+	 */
 	public function setNotifyOnSubscribe($notifyOnSubscribe)
 	{
 		$this->notifyOnSubscribe = $notifyOnSubscribe;
 		
 		return $this;
-	}
-	
-	public function getNotifyOnSubscribe()
-	{
-		return $this->notifyOnSubscribe;
-	}
+	}	
     
 
+	
+	/**
+	 * Get notifyOnUnsubscribe
+	 *
+	 * @return string
+	 */
+	public function getNotifyOnUnsubscribe()
+	{
+		return $this->notifyOnUnsubscribe;
+	}
+
+	/**
+	 * Set notifyOnUnsubscribe
+	 *
+	 * @param  string $notifyOnUnsubscribe
+	 * @return List
+	 */
 	public function setNotifyOnUnsubscribe($notifyOnUnsubscribe)
 	{
 		$this->notifyOnUnsubscribe = $notifyOnUnsubscribe;
 		
 		return $this;
-	}
-	
-	public function getNotifyOnUnsubscribe()
-	{
-		return $this->notifyOnUnsubscribe;
-	}
+	}	
     
 
-	public function setDateCreated($dateCreated)
-	{
-		$this->dateCreated = $dateCreated;
-		
-		return $this;
-	}
 	
-	public function getDateCreated()
+	/**
+	 * Get emailTypeOption
+	 *
+	 * @return blob
+	 */
+	public function getEmailTypeOption()
 	{
-		return $this->dateCreated;
+		return $this->emailTypeOption;
 	}
-    
 
-	public function setListRating($listRating)
-	{
-		$this->listRating = $listRating;
-		
-		return $this;
-	}
-	
-	public function getListRating()
-	{
-		return $this->listRating;
-	}
-    
-
+	/**
+	 * Set emailTypeOption
+	 *
+	 * @param  blob $emailTypeOption
+	 * @return List
+	 */
 	public function setEmailTypeOption($emailTypeOption)
 	{
 		$this->emailTypeOption = $emailTypeOption;
 		
 		return $this;
-	}
-	
-	public function getEmailTypeOption()
-	{
-		return $this->emailTypeOption;
-	}
+	}	
     
 
-	public function setSubscribeUrlShort($subscribeUrlShort)
-	{
-		$this->subscribeUrlShort = $subscribeUrlShort;
-		
-		return $this;
-	}
 	
-	public function getSubscribeUrlShort()
+	/**
+	 * Get visibility
+	 *
+	 * @return string
+	 */
+	public function getVisibility()
 	{
-		return $this->subscribeUrlShort;
+		return $this->visibility;
 	}
-    
 
-	public function setSubscribeUrlLong($subscribeUrlLong)
-	{
-		$this->subscribeUrlLong = $subscribeUrlLong;
-		
-		return $this;
-	}
-	
-	public function getSubscribeUrlLong()
-	{
-		return $this->subscribeUrlLong;
-	}
-    
-
-	public function setBeamerAddress($beamerAddress)
-	{
-		$this->beamerAddress = $beamerAddress;
-		
-		return $this;
-	}
-	
-	public function getBeamerAddress()
-	{
-		return $this->beamerAddress;
-	}
-    
-
+	/**
+	 * Set visibility
+	 *
+	 * @param  string $visibility
+	 * @return List
+	 */
 	public function setVisibility($visibility)
 	{
 		$this->visibility = $visibility;
 		
 		return $this;
-	}
-	
-	public function getVisibility()
-	{
-		return $this->visibility;
-	}
+	}	
 }
